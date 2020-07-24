@@ -35,10 +35,7 @@ public class Book extends Item {
         return bookType + ' ' + bookCount;
     }
     
-    // public static void main(String[] args) {
-    //     Book book1 = new Book();
-    //     book1.setBookType("Asafe");
-    //     book1.setBookCount(12);
-    //     System.out.println(book1.toString());
-    // }
+    public void item() {
+        System.out.println("- Book");
+    }
 }   

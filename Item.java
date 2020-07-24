@@ -5,7 +5,8 @@ public abstract class Item {
     private String itemType; // Private is considerated best practice in this case
     private int numberOfItems;
 
-    // Check if abstract item is needed
+    abstract void item();
+
     public Item () {
 
     }
@@ -31,8 +32,8 @@ public abstract class Item {
         return numberOfItems;
     }
 
-    // public String toString () {
-    //     return itemType + ' ' + numberOfItems;
+    // public String print() {
+    //     return "This is your shopping list! Products are described down below";
     // }
     
 }   

@@ -1,37 +1,45 @@
-// import java.util.Scanner;
-// // Todo: Everything
-// public class Book { 
-//     Scanner scnr = new Scanner(System.in);
-//     private String bookType; // Private is considerated best practice in this case
-//     private int produceCount;
+import java.util.Scanner;
 
-//     public Book () {
+interface FruitInterface {
+    abstract public void fruitMethod ();
+}
 
-//     }
+public class Fruit extends Produce implements FruitInterface {
+    Scanner scnr = new Scanner(System.in);
+    private String fruitType; // Private is considerated best practice in this case
+    private int fruitCount;
 
-//     public Book(String bookType, int produceCount) {
-//         this.bookType = bookType; // reserved word "this" used to refer to current contructor
-//         this.produceCount = produceCount;
-//     }
+    public Fruit () {
 
-//     public void setBookType(String name) {
-//         bookType = name;
-//     }
+    }
+
+    public Fruit (String fruitType, int fruitCount) {
+        this.fruitCount = fruitCount; // reserved word "this" used to refer to current contructor
+        this.fruitType = fruitType;
+    }
+
+    public void setFruitType(String name) {
+        fruitType = name;
+    }
     
-//     public void setProduceCount(int number) {
-//         produceCount = number;
-//     }
+    public void setFruitCount(int number) {
+        fruitCount = number;
+    }
 
-//     public String getBookType() {
-//         return bookType;
-//     }
+    public Integer getFruitCount() {
+        return fruitCount;
+    }
 
-//     public Integer getProduceCount() {
-//         return produceCount;
-//     }
+    public String getFruitType() {
+        return fruitType;
+    }
 
-//     public String toString () {
-//         return bookType + ' ' + produceCount;
-//     }
-    
-// }   
+    @Override
+    public String toString () {
+        return fruitCount + " " + fruitType;
+    }
+
+    public void fruitMethod () {
+        System.out.println("* Fruit");
+    }
+}   

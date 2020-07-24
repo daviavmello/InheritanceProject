@@ -34,4 +34,9 @@ public class Produce extends Item {
     public String toString () {
         return produceCount + " " + produceType;
     }
+    
+    // Overriden abstract method
+    public void item() {
+        System.out.println("- Produce");
+    }
 }   
