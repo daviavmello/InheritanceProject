@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
 public class Produce extends Item {
-    Scanner scnr = new Scanner(System.in);
     private String produceType; // Private is considerated best practice in this case
     private int produceCount;
 

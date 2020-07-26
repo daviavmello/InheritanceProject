@@ -1,7 +1,4 @@
-import java.util.Scanner;
-
 public class Book extends Item {
-    Scanner scnr = new Scanner(System.in);
     private String bookType; // Private is considerated best practice in this case
     private int bookCount;
 
@@ -32,7 +29,7 @@ public class Book extends Item {
 
     @Override
     public String toString () {
-        return bookType + ' ' + bookCount;
+        return bookType + ' ' + bookCount + " units";
     }
     
     public void item() {

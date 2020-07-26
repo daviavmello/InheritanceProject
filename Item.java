@@ -1,8 +1,5 @@
-import java.util.Scanner;
-
 public abstract class Item {
-    Scanner scnr = new Scanner(System.in);
-    private String itemType; // Private is considerated best practice in this case
+
     private int numberOfItems;
 
     abstract void item();
@@ -32,8 +29,13 @@ public abstract class Item {
         return numberOfItems;
     }
 
-    // public String print() {
-    //     return "This is your shopping list! Products are described down below";
-    // }
+    @Override
+    public String toString () {
+        return numberOfItems + " " + itemType;
+    }
+
+    public void itemMethod() {
+        System.out.println("This is your shopping list! Products are described down below:");
+    }
     
 }   

@@ -1,11 +1,8 @@
-import java.util.Scanner;
-
 interface FruitInterface {
     abstract public void fruitMethod ();
 }
 
 public class Fruit extends Produce implements FruitInterface {
-    Scanner scnr = new Scanner(System.in);
     private String fruitType; // Private is considerated best practice in this case
     private int fruitCount;
 
